@@ -793,3 +793,5 @@
     </plurals>
     <string name="player_is_live">Live</string>
 </resources>
+<string name="cinemana_add">إضافة سينمانا</string>
+<string name="cinemana_repo_url" translatable="false">https://raw.githubusercontent.com/mo7AmMeD64/cs-cinemana/main/repo/repo.json</string>
