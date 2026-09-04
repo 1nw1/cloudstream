@@ -194,7 +194,24 @@ import kotlin.math.absoluteValue
 import kotlin.reflect.full.createInstance
 import kotlin.system.exitProcess
 
-class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCallback {
+class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCallback {fun addCinemanaRepo(view: android.view.View) {
+    val repoLink = getString(R.string.cinemana_repo_url)
+
+    try {
+        val intent = android.content.Intent(
+            android.content.Intent.ACTION_VIEW,
+            android.net.Uri.parse(repoLink)
+        )
+        startActivity(intent)
+    } catch (error: Exception) {
+        android.widget.Toast.makeText(
+            this,
+            "تعذر فتح مستودع سينمانا",
+            android.widget.Toast.LENGTH_LONG
+        ).show()
+    }
+}
+
     companion object {
         var activityResultLauncher: ActivityResultLauncher<Intent>? = null
 
