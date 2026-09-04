@@ -266,8 +266,7 @@
         android:id="@+id/home_preview_settings_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone" />
-</FrameLayout><com.google.android.material.button.MaterialButton
+        android:visibility="gone" /><com.google.android.material.button.MaterialButton
     android:id="@+id/add_cinemana_button"
     android:layout_width="match_parent"
     android:layout_height="56dp"
@@ -284,3 +283,5 @@
     android:textStyle="bold"
     app:backgroundTint="#E50914"
     app:cornerRadius="18dp" />
+    
+</FrameLayout>
